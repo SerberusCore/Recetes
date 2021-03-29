@@ -1,8 +1,16 @@
 [
-    {"nombre":"Lomo Saltado"},
-    {"nombre":"Ají de Gallina"},
-    {"nombre":"Tallarines Rojos"},
-    {"nombre":"Asado con Puré"},
-    {"nombre":"Puré de Espinaca"},
-    {"nombre":"Patasca"}
+    {"nombre":"Lomo Saltado",
+    "descripcion":"El lomo saltado es un plato típico de la gastronomía del Perú consistente en carne de res, arroz cocido y papas fritas. Es uno de los platos más consumidos popularmente en el Perú.​"},
+    {"nombre":"Ají de Gallina",
+    "descripcion":"El ají de gallina es un plato típico de la gastronomía peruana, concretamente de la costa, ​ que consiste en un ají o crema espesa con pechuga de gallina deshilachada. Esta crema es servida con papas cocidas, y en ocasiones con arroz blanco. Es común reemplazar la gallina por pollo."
+        },
+    {"nombre":"Tallarines Rojos",
+    "descripcion":""},
+    {"nombre":"Asado con Puré",
+    "descripcion":""},
+    {"nombre":"Puré de Espinaca",
+    "descripcion":""},
+    {"nombre":"Patasca",
+    "descripcion":""},
+
 ]
