@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import recetas from "../recetas.json";
+import recetas from "../../assets/data/recetas.json";
 
 @Component({
   selector: 'app-platos',
