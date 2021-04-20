@@ -2,8 +2,9 @@
   "name": "cocina",
   "version": "0.0.0",
   "scripts": {
+    "build-recetas":"npx tsc scripts/build-recetas.ts && node scripts/build-recetas.js",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run build-recetas && ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
