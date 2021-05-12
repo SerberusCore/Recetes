@@ -2,14 +2,15 @@
   "name": "cocina",
   "version": "0.0.0",
   "scripts": {
-    "build-recetas":"npx tsc scripts/build-recetas.ts && node scripts/build-recetas.js",
+    "build-recetas": "npx tsc scripts/build-recetas.ts && node scripts/build-recetas.js",
+    "build-clean-recetas": "npx tsc scripts/build-clean-recetas.ts && node scripts/build-clean-recetas.js",
     "ng": "ng",
     "start": "npm run build-recetas && ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href='./'"
+    "deploy": "npm run build-recetas && ng build --prod --base-href='./' && npm run build-clean-recetas"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +22,7 @@
     "@angular/platform-browser": "~11.2.3",
     "@angular/platform-browser-dynamic": "~11.2.3",
     "@angular/router": "~11.2.3",
+    "file-system": "^2.2.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
@@ -29,6 +31,7 @@
     "@angular-devkit/build-angular": "~0.1102.2",
     "@angular/cli": "~11.2.2",
     "@angular/compiler-cli": "~11.2.3",
+    "@types/filesystem": "^0.0.30",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",

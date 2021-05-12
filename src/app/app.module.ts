@@ -6,19 +6,27 @@ import { AppComponent } from './app.component';
 import { PlatosComponent } from './platos/platos.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { EditorComponent } from './editor/editor.component';
+import { RecetaComponent } from './receta/receta.component';
+
+import{RecetasService} from './servicios/recetas.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlatosComponent,
     CabeceraComponent,
-    SidebarComponent
+    SidebarComponent,
+    EditorComponent,
+    RecetaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    RecetasService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
